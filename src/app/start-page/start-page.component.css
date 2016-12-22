@@ -1,0 +1,167 @@
+
+.navbar-div-padding{
+  padding-top: 10%;
+  padding-left: 5%; 
+}
+
+.ibox-content-login {
+    max-width: 370px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+    border-radius: 0.25em;
+    padding-right: 4%;
+}
+
+
+
+.row{
+  margin: 0;
+}
+
+.home-component{
+  background: url(../../assets/landing/header_one.jpg ) 50% 0 no-repeat;
+
+  height: 50px;
+  width: 50px;
+}
+
+.menu-font{
+    padding-right: 2%;
+}
+.menu-font li a{
+    color: #fff;
+    height: auto;
+    display: block;
+   /* font-size: 14px;
+    padding: 15px 20px 15px 0px;
+    border-radius: 0 0 5px 5px;
+    font-weight: 700;*/
+    transition: all 0.1s ease-in-out 0s;
+    background: transparent;
+    text-transform: uppercase;
+    transition: 0.1s;
+}
+
+.menu-font.active li a{
+    
+    background: transparent;
+    
+}
+
+
+.menu-font li a:hover {
+  color: #0000ff;
+  
+}
+
+
+.navbar-brand img{
+  height: 40px;
+  transition: all 0.8s ease-in-out 0s;
+
+}
+
+
+.navbar-container {
+  padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  left:0%;
+  z-index:9999;
+  background-color: #fc9b1d;
+}
+
+.navbar-brand.fixed-theme img{
+  height: 35px;
+      transition: all 0.8s ease-in-out 0s;
+
+  
+}
+
+.navbar-container.fixed-theme {
+  padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+  transition: 0.8s;
+  -webkit-transition:  0.8s;
+}
+
+
+
+.login-header{
+  width: 70%;
+  
+}
+
+
+
+.btn-primary {
+    background-color: #fc9b1d;
+    border-color: #fc9b1d;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+.full-width {
+    width: 100% !important;
+}
+
+
+
+
+.menu-color{
+      background-color: #fc9b1d;
+          border-color: #fc9b1d;
+          float: left;
+
+
+
+}
+
+.menu-color span{
+  background-color: #ffffff;
+
+}
+
+.navbar-default .navbar-nav > a:hover {
+    border-top: 6px solid #fc9b1d;
+}
+
+@media only screen  and (max-width: 768px){
+  .menu-color-collapse{
+    background-color: #fc9b1d;
+  }
+
+  .form-padding{
+  padding-top: 10%;
+
+}
+
+
+  
+}
+
+
+

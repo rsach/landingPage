@@ -1,0 +1,78 @@
+<header #navbar  >
+
+ 
+
+      <nav class="navbar navbar-fixed-top link-effect-4 menu-color-collapse" [ngClass]="navbarCl" >
+        <div class="container-fluid" [ngClass]="navbarCl">
+          <div class="navbar-header" [ngClass]="navbarCl">
+            <button type="button" class="navbar-toggle collapsed menu-color" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only ">Toggle navigation</span>
+              <span class="icon-bar "></span>
+              <span class="icon-bar "></span>
+              <span class="icon-bar "></span>
+            </button>
+            <a class="navbar-brand image-responsive" [ngClass]="navbarCl" href="#" >
+              <img src="../../assets/archiveonline.png">
+            </a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse menu-color-collapse">
+            <ul class="nav navbar-nav navbar-right menu-font ">
+              <li class="active"><a  href="#">LOGIN</a></li>
+              <li><a  href="#">FEATURES</a></li>
+              <li><a  href="#">CHANGELOG</a></li>
+              <li><a  href="#">Contact</a></li>
+              
+              
+            </ul>
+
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+
+
+
+   
+
+
+
+
+</header>
+
+<div class="row home-component image-responsive  navbar-div-padding" [style.width.px]="width" [style.height.px]="height">
+  <div class="row">
+
+    <div class="col-sm-8 hidden-xs">
+      <img src="../../assets/landing/login-header.png" class="login-header">
+    </div>
+
+    <div class=" col-sm-4 form-padding ">
+
+      <div class="ibox-content-login">
+        <h3>Sign in</h3>
+        <form>
+          <div class="form-group">
+              <input type="email" class="form-control" placeholder="Username" required="">
+          </div>
+
+          <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" required="">
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+          </div>
+
+
+          
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+  
+</div>
+
+
+
