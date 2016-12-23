@@ -1,0 +1,133 @@
+.contact-box {
+  background-color: #ffffff;
+  border: 1px solid #e7eaec;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.contact-box > a {
+  color: inherit;
+}
+.contact-box.center-version {
+  border: 1px solid #e7eaec;
+  padding: 0;
+}
+.contact-box.center-version > a {
+  display: block;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+.contact-box.center-version > a img {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact-box.center-version address {
+  margin-bottom: 0;
+}
+.contact-box .contact-box-footer {
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 1px solid #e7eaec;
+  padding: 15px 20px;
+}
+
+
+
+.navy-line {
+    width: 60px;
+    height: 1px;
+    margin: 60px auto 0;
+    border-bottom: 2px solid #fc9b1d;
+}
+
+.navy-line h1{
+    
+    margin-top: 10px;
+    font-size: 30px;
+    color: #aeaeae;
+    font-weight: 200;
+
+}
+
+p {
+    color: #aeaeae;
+    font-size: 13px;
+}
+
+.m-b-lg {
+    margin-bottom: 30px;
+}
+
+
+@media (min-width: 1200px)
+.col-lg-offset-3 {
+    margin-left: 25%;
+}
+
+@media (min-width: 1200px)
+.col-lg-3 {
+    width: 25%;
+}
+
+
+span.orange {
+    color: #fc9b1d;
+}
+
+
+.btn-primary {
+    background-color: #fc9b1d;
+    border-color: #fc9b1d;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #fc9b1d;
+    border-color: #fc9b1d;
+    color: #FFFFFF;
+}
+.btn {
+    border-radius: 3px;
+}
+
+
+.m-t-sm {
+    margin-top: 10px;
+}
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+
+.social-icon a {
+    background: #fc9b1d;
+    color: #fff;
+    padding: 4px 8px;
+    height: 28px;
+    width: 28px;
+    display: block;
+    border-radius: 50px;
+}
+a {
+    cursor: pointer;
+}
+
+ .contact {
+    background-image: url(../../assets/landing/word_map.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+}

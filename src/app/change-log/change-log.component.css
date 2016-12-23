@@ -1,0 +1,42 @@
+
+.services{
+	color:#676A68
+}
+.services h2 {
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.label-coming, .badge-coming {
+    color: #555555;
+}
+.coming {
+    color: #5e5e5e;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    text-shadow: none;
+}
+
+
+.services 	p {
+    color: #aeaeae;
+    font-size: 13px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+@media only screen and (max-width: 768px){
+	.services{
+		padding-top: 10%;
+	}
+	
+}

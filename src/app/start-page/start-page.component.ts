@@ -1,4 +1,5 @@
 import { Component, OnInit ,Inject,Output,EventEmitter,AfterViewInit,ElementRef,ViewChild } from '@angular/core';
+
 import { DOCUMENT } from '@angular/platform-browser';
 import { HostListener } from '@angular/core';
 
@@ -72,6 +73,11 @@ onWindowScroll() {
 
 
 
+
+}
+
+
+onLogin(){
 
 }
 

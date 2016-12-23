@@ -5,16 +5,27 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { StartComponent } from './start-page/start-page.component';
+import { ChangeLogComponent } from './change-log/change-log.component';
+import { FeaturesComponent } from './features/features.component';
+import { ContactComponent } from './contact/contact.component';
+
+
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StartComponent
+    StartComponent,
+    ChangeLogComponent,
+    FeaturesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    Ng2PageScrollModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]
