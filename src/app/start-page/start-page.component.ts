@@ -1,9 +1,10 @@
 import { Component, OnInit ,Inject,Output,EventEmitter,AfterViewInit,ElementRef,ViewChild } from '@angular/core';
-
+import {FormArray, FormGroup, FormControl, Validators, FormBuilder} from "@angular/forms";
 import { DOCUMENT } from '@angular/platform-browser';
 import { HostListener } from '@angular/core';
 
-
+import { LoginService } from '../login.service';
+import { LoginPopup } from '../LoginPopup';
 
 
 
@@ -26,6 +27,13 @@ export class StartComponent implements OnInit,AfterViewInit {
 
   view:boolean = true;
 
+  loginForm:FormGroup;
+
+  loginPopups:any [];
+
+  
+
+
   @Output() navbarH =  new EventEmitter();
   @ViewChild('navbar') el:ElementRef;
 
@@ -33,15 +41,25 @@ export class StartComponent implements OnInit,AfterViewInit {
   navHeight:number=0;
 
 
-  constructor(@Inject(DOCUMENT) private document: Document) { }
+  constructor(@Inject(DOCUMENT) private document: Document,
+              private formbldr:FormBuilder,
+              private loginService:LoginService
+             
+
+              ) { 
+
+    }
 
 ngOnInit() {
 
   this.onResize();
+  this.initForm();
+
 }
 
 @HostListener('window:resize', ['$event'])
 ngAfterViewInit(){
+
   this.onResize();
   
 }
@@ -78,7 +96,36 @@ onWindowScroll() {
 
 
 onLogin(){
+   this.loginService.postLogin(this.loginForm.value)
+   .subscribe(data => {
+     this.loginPopups = data.data;
+   },err => {
 
+     console.log(err);
+
+   });
+
+    
+
+    
+  
+  
+  
+
+}
+
+initForm(){
+  this.loginForm = this.formbldr.group({
+      username: ["" , Validators.required],
+      password: ["" , Validators.required ]
+    });
+}
+
+
+
+
+loginRedirect(loginPopup){
+  this.loginService.writeCookie(loginPopup);
 }
 
 
