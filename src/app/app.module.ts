@@ -22,6 +22,8 @@ import { LoginRoutingModule } from "./app.routing";
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { CookieService } from 'angular2-cookie/services/cookies.service';
 import { MomentModule } from 'angular2-moment';
+import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
+
 
 
 
@@ -46,7 +48,7 @@ import { MomentModule } from 'angular2-moment';
     Ng2PageScrollModule.forRoot(),
     ReactiveFormsModule,
     LoginRoutingModule,
-    MomentModule
+    MomentModule,
 
 
   ],
