@@ -35,10 +35,11 @@ export class LoginService {
   		
 
   		const url = 'https://api.archiveonline.se/api/authenticate';
+      console.log();
 
   		var formData:FormData = new FormData();
-  		formData.append("username", "admin");
-  		formData.append("password", "stockholm");
+  		formData.append("username", loginDetails.username);
+  		formData.append("password", loginDetails.password);
 
   		//this.loginStack.emit(1);
   		return this.http.post(url,formData,{headers:headers})

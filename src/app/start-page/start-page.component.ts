@@ -31,6 +31,11 @@ export class StartComponent implements OnInit,AfterViewInit {
 
   loginPopups:any [];
 
+  response:string = '';
+
+  loginCog:boolean = false;
+  loginFalse:boolean = false;
+
   
 
 
@@ -96,14 +101,23 @@ onWindowScroll() {
 
 
 onLogin(){
+  this.loginCog= true;
    this.loginService.postLogin(this.loginForm.value)
    .subscribe(data => {
      this.loginPopups = data.data;
-   },err => {
+     this.response = 'has-success';
+        },err => {
+
+          this.response = 'has-error'
+          this.loginFalse = true;
+          this.loginCog = false;
+
 
      console.log(err);
 
    });
+
+
 
     
 
