@@ -83,7 +83,8 @@ onResize() {
 onWindowScroll() {
 
 
-  let number = this.document.body.scrollTop;
+  let number = this.scrollbarYPos();
+
   if (number > 100) {
     this.navbarCl = 'fixed-theme';
 
@@ -143,6 +144,11 @@ initForm(){
 loginRedirect(loginPopup){
   this.loginService.writeCookie(loginPopup);
 }
+
+
+ private scrollbarYPos(): number {
+    return window.pageYOffset || document.documentElement.scrollTop;
+  }
 
 
 
