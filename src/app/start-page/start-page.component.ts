@@ -102,6 +102,8 @@ onWindowScroll() {
 
 onLogin(){
   this.loginCog= true;
+            this.loginFalse = false;
+
    this.loginService.postLogin(this.loginForm.value)
    .subscribe(data => {
      this.loginPopups = data.data;
