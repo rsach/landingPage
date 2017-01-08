@@ -26,10 +26,10 @@
 
 
 .home-component{
-  background: url(../../assets/landing/header_one.jpg ) 50% 0 no-repeat;
+  background: url(assets/landing/header_one.jpg ) 50% 0 no-repeat;
 
-  height: 50px;
-  width: 50px;
+  height: 100%;
+  width: 100%;
 }
 
 .menu-font{
