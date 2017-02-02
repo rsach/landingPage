@@ -22,6 +22,10 @@
 
 
 }
+
+.text-center p{
+  color: #aeaeae;
+}
 .contact-box.center-version > a {
   display: block;
   background-color: #ffffff;
@@ -34,8 +38,10 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.contact-box.center-version address {
-  margin-bottom: 0;
+ address {
+    font-size: 13px;
+    color: #676a6c;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
 }
 .contact-box .contact-box-footer {
   text-align: center;
@@ -57,13 +63,13 @@
     
     margin-top: 10px;
     font-size: 30px;
-    color: #aeaeae;
+    color: #676a6c;
     font-weight: 200;
 
 }
 
 p {
-    color: #aeaeae;
+    color: #676a6c;
     font-size: 13px;
 }
 
