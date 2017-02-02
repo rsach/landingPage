@@ -11,6 +11,17 @@
   border: 1px solid #e7eaec;
   padding: 0;
 }
+
+
+.text-center h1{
+
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 200;
+                color: #676a6c;
+
+
+}
 .contact-box.center-version > a {
   display: block;
   background-color: #ffffff;
@@ -61,15 +72,15 @@ p {
 }
 
 
-@media (min-width: 1200px)
+@media (min-width: 1200px){
 .col-lg-offset-3 {
     margin-left: 25%;
-}
+}}
 
-@media (min-width: 1200px)
+@media (min-width: 1200px){
 .col-lg-3 {
     width: 25%;
-}
+}}
 
 
 span.orange {
