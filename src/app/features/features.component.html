@@ -18,7 +18,7 @@
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
         </div> -->
 
-        <masonry  columnWidth="80" gutter="10" fitWidth="true" >
+        <masonry  columnWidth="80"  >
             <masonry-brick class="brick brick1" *ngFor="let feature of features">
                 <div >
                     <i class="{{ feature.icon }} text-center features-icon-size-position"></i> <h2 class="text-center"> <span class="coming  btn label-coming" *ngIf="feature.comingsoon">coming soon</span> <br *ngIf="feature.comingsoon">{{ feature.title }}</h2>

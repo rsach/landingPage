@@ -40,7 +40,7 @@ export class StartComponent implements OnInit,AfterViewInit {
 
 
   @Output() navbarH =  new EventEmitter();
-  @ViewChild('navbar') el:ElementRef;
+  @ViewChild('navbarr') el:ElementRef;
 
   container:any;
   navHeight:number=0;
@@ -93,6 +93,8 @@ onWindowScroll() {
     this.navbarCl = ''
 
   }
+
+  console.log(this.navbarCl)
 
 
 
