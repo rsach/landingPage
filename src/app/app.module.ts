@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
+import { SiteJsonService } from './home/site-json.service';
 
 import { LoginService } from './login.service'; 
 
@@ -24,6 +25,8 @@ import { CookieService } from 'angular2-cookie/services/cookies.service';
 import { MomentModule } from 'angular2-moment';
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { MaterialModule } from '@angular/material';
+import { MasonryModule } from 'angular2-masonry';
+
 
 
 
@@ -52,13 +55,15 @@ import { MaterialModule } from '@angular/material';
     ReactiveFormsModule,
     LoginRoutingModule,
     MomentModule,
-    MaterialModule
+    MaterialModule,
+    MasonryModule
 
 
   ],
   providers: [
             CookieService,
-            LoginService
+            LoginService,
+            SiteJsonService
 
             ],
   bootstrap: [AppComponent]

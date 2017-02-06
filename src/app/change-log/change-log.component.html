@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="navy-line"></div>
-                <h1>Changelog</h1>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+                <h1>{{ title }}</h1>
+                <p>{{ description }} </p>
             </div>
         </div>
         <div class="row features-block">
@@ -21,7 +21,7 @@
                             <h2>{{ changeLog.title }}</h2>
                             <p>{{ changeLog.description }}</p>
                             <a href= {{changeLog.url}} class="btn btn-xs btn-primary"> More info</a>
-                            <span class="vertical-date"> {{changeLog.date | amCalendar:{ lastDay : 'Yesterday'} }} <br> <small>{{ changeLog.date | amDateFormat:'MMM D'}}</small> </span>
+                            <span class="vertical-date"> {{changeLog.date | amCalendar }} <br> <small>{{ changeLog.date | amDateFormat:'MMM D'}}</small> </span>
                         </div>
                     </div>
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SiteJsonService } from '../home/site-json.service';
 
 @Component({
   selector: 'app-features',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturesComponent implements OnInit {
 
-  constructor() { }
+	features:any = [];
+  title:string;
+  description:string;
+
+  constructor(private sjs:SiteJsonService) { 
+  	this.sjs.getFeaturesPageData().subscribe((data)=> {
+
+  		this.features = data.features
+      console.log(this.features)
+
+  	})
+
+  }
 
   ngOnInit() {
   }

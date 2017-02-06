@@ -3,44 +3,43 @@
         <div class="row m-b-lg">
             <div class="col-lg-12 text-center">
                 <div class="navy-line"></div>
-                <h1>Contact Us</h1>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                <h1>{{ contactPageData.title }}</h1>
+                <p>{{ contactPageData.description }}</p>
             </div>
         </div>
         <div class="row m-b-lg">
             <div class="col-lg-3 col-lg-offset-3">
                 <address>
-                    <strong><span class="orange">Uppdragshuset AB</span></strong><br>
-                    Maria skolgatan 83<br>
-                    118 53 Stockholm<br>
-                    <abbr title="Phone">Tel:</abbr> (123) 456-7890
+                    <strong><span class="orange">{{ contactPageData.companyName }}</span></strong><br>
+                    <div [innerHTML]="contactPageData.address"></div>
+                    <abbr title="Phone">Tel:</abbr> {{ contactPageData.phone }}
                 </address>
             </div>
             <div class="col-lg-4">
                 <p class="text-color">
-                    ArchiveOnline can be adapted to suit your internal processes for managing inventions to register, infringement searches, surveillance results, etc. Users can, for example, be assigned to groups with associated privileges, in order to tailor the possibilities for them to edit data and documents. The system makes it easy to comment on and rank documents, and to pass them on to the involved parties.
+                    {{ contactPageData.aboutus }}
                 </p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
-                <a href="mailto:test@email.com" class="btn btn-primary">Send us mail</a>
+                <a href="{{ contactPageData.email }}" class="btn btn-primary">Send us mail</a>
                 <p class="m-t-sm">
                     Or follow us on social platform
                 </p>
                 <ul class="list-inline social-icon">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    <li><a href="{{ contactPageData.twitterHandle }}"><i class="fa fa-twitter"></i></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    <li><a href="{{ contactPageData.facebookHandle }}"><i class="fa fa-facebook"></i></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    <li><a href="{{ contactPageData.linkedinHandle }}"><i class="fa fa-linkedin"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p><strong>© 2017 Uppdragshuset</strong><br> consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <p><strong>{{ contactPageData.trademark }}</strong><br> {{ contactPageData.trademarkDescription }}</p>
             </div>
         </div>
     </div>

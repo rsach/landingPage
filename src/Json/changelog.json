@@ -1,0 +1,11 @@
+{
+  "title":"Changelog",
+  "description":"Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.",
+  "changelogs":[
+    { "css":"fa-briefcase","title":"Meeting","description":"Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the sale.","date":"2017-02-05T17:18:51.523Z","url":"http://localhost:4200/#"},
+     { "css":"fa-briefcase","title":"Meeting","description":"Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the sale.","date":"2017-02-06T17:18:51.523Z","url":"http://localhost:4200/#"},
+      { "css":"fa-briefcase","title":"Meeting","description":"Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the sale.","date":"2017-02-04T17:18:51.523Z","url":"http://localhost:4200/#"},
+       { "css":"fa-briefcase","title":"Meeting","description":"Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the sale.","date":"2017-02-03T17:18:51.523Z","url":"http://localhost:4200/#"}
+    
+    ]
+}
