@@ -1,0 +1,14 @@
+{
+	"title":"Contact Us",
+	"description": "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.",
+	"companyName":"Uppdragshuset AB",
+	"address": " Maria skolgatan 83 <br> 118 53 Stockholm ",
+    "phone": " (123) 456-7890",
+	"aboutus": " ArchiveOnline can be adapted to suit your internal processes for managing inventions to register, infringement searches, surveillance results, etc. Users can, for example, be assigned to groups with associated privileges, in order to tailor the possibilities for them to edit data and documents. The system makes it easy to comment on and rank documents, and to pass them on to the involved parties." ,
+     "email":"mailto:test@email.com",
+     "twitterHandle":"twitter handle",
+     "facebookHandle":"facebook handle",
+     "linkedinHandle":"linkedin handle ",
+     "trademark":"© 2017 Uppdragshuset",
+     "trademarkDescription":" consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+}

@@ -1,0 +1,9 @@
+{
+  "title":"",
+  "features":[
+    {"icon":"fa fa-eye" , "title":"Monitoring","description":"Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.","comingsoon":false },
+    {"icon":"fa fa-flask" , "title":"Invention","description":"Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.","comingsoon":true },
+   	{"icon":"fa fa-eye" , "title":"Monitoring","description":"Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.","comingsoon":false }
+  
+    ]
+}
